@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev  #目标配置文件名为: application.name-profiles.active, 这里是configclient-dev.yml
+  cloud:
+    config:
+      uri: http://localhost:8762  #本地Config Server访问路径
+      fail-fast: true
